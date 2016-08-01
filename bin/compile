@@ -26,7 +26,7 @@ _EOT_
 . $PROFILE_PATH
 cat $PROFILE_PATH | indent
 
-# install
+# install :)
 for formula in $(cat "$BUILD_DIR/Brewfile")
 do
   echo "-----> Installing $formula using brew"
