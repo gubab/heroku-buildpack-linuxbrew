@@ -27,7 +27,7 @@ _EOT_
 cat $PROFILE_PATH | indent
 
 # install
-for formula in $(cat "$BUILD_DIR/.cellar")
+for formula in $(cat "$BUILD_DIR/Brewfile")
 do
   echo "-----> Installing $formula using brew"
   brew install $formula | indent
